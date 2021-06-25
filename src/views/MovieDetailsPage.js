@@ -2,7 +2,7 @@ import { useState, useEffect, lazy, Suspense } from 'react';
 import { Route, NavLink, useParams, useRouteMatch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 import * as api from '../services/serviceApi';
-import styles from './ViewStyles.module.css';
+import styles from './PageStyles.module.css';
 
 const Cast = lazy(() =>
   import('../components/Cast' /* webpackChunkName: "cast-subview" */),

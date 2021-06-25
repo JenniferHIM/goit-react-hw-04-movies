@@ -7,16 +7,16 @@ import styles from './App.module.css';
 
 
 const HomeView = lazy(() =>
-  import('./views/HomeView' /* webpackChunkName: "home-view" */),
+  import('./views/HomePage' /* webpackChunkName: "home-view" */),
 );
 
 const MoviesView = lazy(() =>
-  import('./views/MoviesView' /* webpackChunkName: "movies-view" */),
+  import('./views/MoviesPage' /* webpackChunkName: "movies-view" */),
 );
 
 const MovieDetailsView = lazy(() =>
   import(
-    './views/MovieDetailsView' /* webpackChunkName: "movie-details-view" */
+    './views/MovieDetailsPage' /* webpackChunkName: "movie-details-view" */
   ),
 );
 

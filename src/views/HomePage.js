@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Pagination } from '@material-ui/lab';
 import MoviesList from '../components/MoviesList';
 import * as api from '../services/serviceApi';
-import styles from './ViewStyles.module.css';
+import styles from './PageStyles.module.css';
 
 const HomeView = () => {
     const [movies, setMovies] = useState(null);
