@@ -11,7 +11,7 @@ const handleClick = e => {
     return (
         <div className={styles.container}>
             <nav className={styles.navigation}>
-                <NavLink to="/" exact className={styles.link} activeClassName={styles.activeLink}>
+                <NavLink exact to="/" className={styles.link} activeClassName={styles.activeLink}>
                     Home
                 </NavLink>
                 <NavLink to="/movies" className={styles.link} activeClassName={styles.activeLink}>

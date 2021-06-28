@@ -13,11 +13,11 @@ const Reviews = ({ movieId }) => {
     useEffect(() => {
         api.getReviews(movieId, page).then(data => {
             console.log(data);
-            if (!data.result.length) {
+            if (!data.results.length) {
                 toast.error('No revies for this movie');
                 return;
             }
-            setReviewList(data.result);
+            setReviewList(data.results);
             setTotalPages(data.total_pages);
         });
     }, [movieId, page]);
@@ -26,7 +26,7 @@ const Reviews = ({ movieId }) => {
         if (!path) {
             return 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Noimage.svg/555px-Noimage.svg.png';
         }
-        if (path.incledes('http')) {
+        if (path.includes('http')) {
             return path.slice(path.indexOf('h'));
         }
         return `https://image.tmdb.org/t/p/w500/${path}`;
